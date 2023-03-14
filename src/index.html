@@ -1,15 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">Locations
+                </h2>
+                <!-- Origin/Destination -->
+                <div class="card-location">
+                    <label id="origin-label" for="origin-input" class="form-labels">Origin</label>
+                    <div class="card-input">
+                        <input type="text" class="form-control" list="origin-options" id="origin-input"
+                            placeholder="Location" aria-describedby="origin-label">
+                        <datalist id="origin-options"></datalist>
+                    </div>
+
+                    <label id="destination-label" for="destination-input" class="form-labels">Destination</label>
+                    <div class="card-input">
+                        <input type="text" class="form control" list="destination-options" id="destination-input"
+                            placeholder="Location" aria-describedby="destination-label">
+                        <datalist id="destination-options"></datalist>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <h2 class="card-title">Dates</h2>
+                <div class="card-dates">
+                    <label id="flight-type" for="flight-type-option" class="form-labels">Flight</label>
+                    <select id="flight-type-select" class="form-select" aria-describedby="flight-type">
+                        <option value="one-way">One-way</option>
+                        <option value="one-way">road-trip</option>
+                    </select>
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
     <h1 id="demo"></h1>
     <div class="autoprefixer">hej</div>
 
     <div></div>
 </body>
+
 </html>
